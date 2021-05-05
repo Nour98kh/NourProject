@@ -32,8 +32,8 @@ namespace Gp.Domain
         [DataType(DataType.Date, ErrorMessage = "Invalid Date")]
         public DateTime RegistrationDateM { get; set; }
 
-        public virtual ICollection<Abonnement> Abonnements { get; set; }
-        
+        public virtual ICollection<AbonnementMember> MemAbonnements { get; set; }
+
         public Member()
         {
 

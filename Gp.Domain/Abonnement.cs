@@ -22,7 +22,7 @@ namespace Gp.Domain
         [Column(TypeName="nvarchar(5)")]
         public string DureeAbo { get; set; }
 
-        public virtual ICollection<Member> Members { get; set; }
+        public virtual ICollection<AbonnementMember> MemAbonnements { get; set; }
 
 
         public Abonnement()

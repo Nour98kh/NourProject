@@ -20,11 +20,14 @@ namespace Gp.Data
 
         }
 
+        public DBContext()
+        {
 
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) //méth pour conf toutes les entités et leurs propriétés
         {
-            modelBuilder.Entity<Member>().HasMany(p => p.Abonnements).WithMany(p => p.Members).Map(m =>
+            /*modelBuilder.Entity<Member>().HasMany(p => p.Abonnements).WithMany(p => p.Members).Map(m =>
             {
                 m.MapLeftKey("CodeAbo");
                 m.MapRightKey("MemberId");
@@ -37,7 +40,7 @@ namespace Gp.Data
                 m.MapLeftKey("MemberId");
                 m.MapRightKey("CodeAbo");
                 m.ToTable("Abonnement");
-            });
+            });*/
 
 
         }
